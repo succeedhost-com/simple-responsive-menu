@@ -16,7 +16,6 @@ function setupDropdownToggles() {
             const dropdown = parentLi.querySelector('.main-nav-dropdown');
 
             dropdown.classList.toggle('open');
-            console.log(`Toggled dropdown for: ${toggle.textContent.trim()}`);
         });
     });
 }
@@ -27,7 +26,6 @@ function handleResize() {
 
     // Detect a change in state
     if (currentlyMobile !== isMobile) {
-        console.log(`→ Switched to ${currentlyMobile ? "mobile" : "desktop"} view`);
 
         // Close main menu and all dropdowns when changing view type
         navMenu.classList.remove('open');
@@ -55,7 +53,6 @@ const debouncedResize = debounce(handleResize, 150);
 navToggle.addEventListener('click', () => {
     if (window.innerWidth <= mobileBreakpoint) {
         navMenu.classList.toggle('open');
-        console.log("Toggled mobile menu:", navMenu.classList.contains('open') ? "open" : "closed");
     }
 });
 
