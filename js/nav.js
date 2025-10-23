@@ -24,9 +24,15 @@ function handleViewportChange() {
     // Detect transition from mobile → desktop
     else if (!currentlyMobile && isMobile) {
         console.log("Switched to desktop view");
-        // TODO: Add desktop-specific instructions here
+
         // Close mobile menu if open
         navMenu.classList.remove('open');
+
+        // Close all open dropdowns
+        const openDropdowns = document.querySelectorAll('.main-nav-dropdown.open');
+        openDropdowns.forEach(dropdown => {
+            dropdown.classList.remove('open');
+        });
     }
 
     // Update state
