@@ -30,16 +30,21 @@ Includes a **click-to-toggle mobile menu** and **one-level dropdown support**.
 
 2. Link the CSS and JS in your HTML:
 
+<pre>
+```html
 <link rel="stylesheet" href="css/nav.css"> <!-- link in <head> -->
 
 <script src="js/nav.js"></script> <!-- link just before ending </body> -->
-
+</pre>
 
 3. Copy the <nav> element from index.html into your pages:
 
+<pre>
+```html
 <nav id="main-nav">
   <!-- copy menu structure here -->
 </nav>
+</pre>
 
 
 4. Customize the menu items and dropdowns as needed.
@@ -62,7 +67,7 @@ You can enhance the CSS for animations, colors, or fonts as you grow more confid
 
 ## Live Demo
 
-https://yourusername.github.io/simple-responsive-menu/
+https://succeedhost-com.github.io/simple-responsive-menu/
 
 
 ---
