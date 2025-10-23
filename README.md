@@ -16,7 +16,7 @@ Includes a **click-to-toggle mobile menu** and **one-level dropdown support**.
 
 ## File Structure
 
-```text
+```plaintext
 /index.html - Example page demonstrating the menu
 /css/nav.css - Menu styles
 /js/nav.js - JavaScript for toggle and dropdown functionality
