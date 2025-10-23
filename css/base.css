@@ -20,6 +20,10 @@ p {
     text-align: center;
 }
 
+h3 {
+    padding: 3px;
+}
+
 a#link-git {
     text-decoration: none;
     font-weight: bold;
