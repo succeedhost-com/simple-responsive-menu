@@ -25,24 +25,18 @@ function setupDropdownToggles() {
 function handleResize() {
     const currentlyMobile = window.innerWidth <= mobileBreakpoint;
 
-    // Entering mobile view
-    if (currentlyMobile && !isMobile) {
-        console.log("→ Entered mobile view");
-    }
+    // Detect a change in state
+    if (currentlyMobile !== isMobile) {
+        console.log(`→ Switched to ${currentlyMobile ? "mobile" : "desktop"} view`);
 
-    // Entering desktop view
-    if (!currentlyMobile && isMobile) {
-        console.log("→ Entered desktop view");
-
-        // Close mobile menu
+        // Close main menu and all dropdowns when changing view type
         navMenu.classList.remove('open');
-
-        // Close all dropdowns
         document.querySelectorAll('.main-nav-dropdown.open').forEach(dropdown => {
             dropdown.classList.remove('open');
         });
     }
 
+    // Update state
     isMobile = currentlyMobile;
 }
 
@@ -55,7 +49,6 @@ function debounce(fn, delay = 150) {
     };
 }
 
-// Debounced resize listener
 const debouncedResize = debounce(handleResize, 150);
 
 // --- Event Listeners ---
