@@ -1,0 +1,38 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a#link-git {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5c5c9e;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+a#link-git:hover {
+    color: #23234b;
+}
+
+a#link-git:active,
+a#link-git:visited {
+    color: #1d1d3e;
+}
+
+h3 {
+    text-align: center;
+}
